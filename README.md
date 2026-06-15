@@ -18,7 +18,7 @@ B.Tech Computer Science · AI/ML Specialization · Bennett University · **Gradu
 
 <div align="center">
 
-| 📄 2 Published Papers | 💻 300+ DSA Problems | 🎯 94.3% CV Accuracy | 🏆 AIR 57 · NMTSE | 📦 6 Projects Shipped | 🎓 CGPA 8.16 / 10 |
+| 📄 2 Published Papers | 💻 300+ DSA Problems | 🎯 94.3% CV Accuracy | 🏆 AIR 57 · NMTSE | 📦 6 Projects Shipped | 🎓 CGPA 8.15 / 10 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
 </div>
@@ -66,7 +66,7 @@ Two peer-reviewed papers before graduation. Both focused on real-world deploymen
 
 The problem with ML in agriculture isn't accuracy — it's that farmers won't act on a black-box prediction. Built a LightGBM pipeline (**98.64% accuracy** on SF24 dataset, 4,800 records, 28 features with SMOTE balancing), then applied SHAP for both global feature importance and per-prediction explanations. The goal wasn't just performance: it was a model a non-technical domain expert could interrogate, challenge, and trust. Accuracy and interpretability, not accuracy or interpretability.
 
-[Read Paper →](YOUR_PAPER_DOI_LINK_HERE) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Enhancing-Crop-Prediction-with-Explainable-AI-ASHAP-Based-Approach-)
+[Read Paper →](https://ieeexplore.ieee.org/abstract/document/11398280)) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Enhancing-Crop-Prediction-with-Explainable-AI-ASHAP-Based-Approach-)
 
 </td>
 </tr>
@@ -78,7 +78,7 @@ The problem with ML in agriculture isn't accuracy — it's that farmers won't ac
 
 Smart city infrastructure needs waste classification at camera speed. Applied Random Forest and Decision Tree ensemble classifiers on a 22,500+ image Kaggle dataset, using PCA and LASSO for dimensionality reduction before training — a deliberate choice to reduce variance before ensembling, not after. Validated via K-Fold cross-validation for generalization robustness. Built for operational scalability, not lab conditions.
 
-[Read Paper →](YOUR_PAPER_DOI_LINK_HERE)
+[Read Paper →](https://www.taylorfrancis.com/chapters/edit/10.1201/9781003593089-140/revolutionizing-waste-management-ai-driven-approach-towards-sustainability-sankalp-bijalwan-aniket-saroj-himanshu-gupta-shashwat-sharma-saurabh-kumar-srivastava-ambrish-kumar)) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Revolutionizing-Waste-Management-An-AI-driven-Approach-Towards-Sustainability-)
 
 </td>
 </tr>
@@ -343,7 +343,7 @@ Also open to: pre-placement offers, research internships (2025–2026), and AI p
 
 [![Email](https://img.shields.io/badge/himanshugupta00235%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:himanshugupta00235@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/himanshu-gupta-383a6b220/)
-[![Resume](https://img.shields.io/badge/Download%20Resume-181717?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](YOUR_RESUME_LINK_HERE)
+[![Resume](https://img.shields.io/badge/Download%20Resume-181717?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://drive.google.com/file/d/1RAXEdIfAIvesxwoDafYlOe6vK4p-me_7/view?usp=sharing)
 
 <br>
 
