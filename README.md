@@ -62,7 +62,7 @@ Two peer-reviewed papers before graduation. Both focused on real-world deploymen
 <td>
 
 **Enhancing Crop Prediction with Explainable AI: SHAP-Based Approach**
-*Peer-Reviewed · Published · 2024*
+*Peer-Reviewed · Published · 2026*
 
 The problem with ML in agriculture isn't accuracy — it's that farmers won't act on a black-box prediction. Built a LightGBM pipeline (**98.64% accuracy** on SF24 dataset, 4,800 records, 28 features with SMOTE balancing), then applied SHAP for both global feature importance and per-prediction explanations. The goal wasn't just performance: it was a model a non-technical domain expert could interrogate, challenge, and trust. Accuracy and interpretability, not accuracy or interpretability.
 
@@ -74,7 +74,7 @@ The problem with ML in agriculture isn't accuracy — it's that farmers won't ac
 <td>
 
 **Revolutionizing Waste Management: An AI-driven Approach Towards Sustainability**
-*Peer-Reviewed · Published · 2024*
+*Peer-Reviewed · Published · 2025*
 
 Smart city infrastructure needs waste classification at camera speed. Applied Random Forest and Decision Tree ensemble classifiers on a 22,500+ image Kaggle dataset, using PCA and LASSO for dimensionality reduction before training — a deliberate choice to reduce variance before ensembling, not after. Validated via K-Fold cross-validation for generalization robustness. Built for operational scalability, not lab conditions.
 
