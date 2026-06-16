@@ -102,8 +102,8 @@ Smart city infrastructure needs waste classification at camera speed. Applied Ra
       │   └── Batch gradient descent from scratch → R² > 98% on 10,000-record dataset
       │   └── TF-IDF + Logistic Regression spam classifier → 92.8%+ on 5,600 emails, Streamlit-deployed
       │   └── Cert: Supervised ML Classification (IBM, Coursera)
-      │   └── Published: Crop Prediction with XAI (98.64% · SHAP)
-      │   └── Published: Waste Management AI (22,500+ images · K-Fold validated)
+      │   └── Published: Crop Prediction with XAI (98.64% · SHAP)(Published in 2026)
+      │   └── Published: Waste Management AI (22,500+ images · K-Fold validated) (Published in 2025)
       │
 2024  ─── Deep Learning · Computer Vision · Accessibility AI
       │   └── TensorFlow · Keras · OpenCV · Dlib
