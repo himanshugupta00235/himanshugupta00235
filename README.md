@@ -18,7 +18,7 @@ B.Tech Computer Science · AI/ML Specialization · Bennett University · **Gradu
 
 <div align="center">
 
-| 📄 2 Published Papers | 💻 300+ DSA Problems | 🎯 94.3% CV Accuracy | 🏆 AIR 57 · NMTSE | 📦 6 Projects Shipped | 🎓 CGPA 8.15 / 10 |
+| 📄 2 Published Papers | 💻 350+ DSA Problems | 🎯 94.3% CV Accuracy | 🏆 AIR 57 · NMTSE | 📦 6 Projects Shipped | 🎓 CGPA 8.15 / 10 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
 </div>
