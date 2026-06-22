@@ -52,6 +52,7 @@ Most recently, took that same discipline into mobile: shipped **PrepAI**, a Flut
 **Decision that mattered:** Repository Pattern over direct Firestore calls inside ViewModels — the backend could be swapped (Supabase, a mock source, anything) without touching a single screen. Same instinct as choosing SHAP over a black-box model: optimize for what you can defend, not just what happens to work once.
 
 [![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/prep-ai)
+[![Live Demo →](https://img.shields.io/badge/Live%20Demo-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://prepai-5819e.web.app/#/home)
 
 ---
 
@@ -269,7 +270,7 @@ A SHAP explanation or a 94.3%-accurate detector is only as useful as the surface
 
 | Stage | Status | Proof |
 |---|:---:|---|
-| CS Foundations + DSA | ✅ | 300+ problems · AIR 57 NMTSE |
+| CS Foundations + DSA | ✅ | 350+ problems · AIR 57 NMTSE |
 | Classical Machine Learning | ✅ | 3 ML projects · custom gradient descent · sklearn pipelines in production |
 | Deep Learning + Computer Vision | ✅ | Drowsiness detection at 94.3% · Sign language converter · TF + OpenCV |
 | Applied Research | ✅ | 2 peer-reviewed papers published · SHAP / XAI · ensemble methods |
