@@ -51,7 +51,7 @@ Most recently, took that same discipline into mobile: shipped **PrepAI**, a Flut
 
 **Decision that mattered:** Repository Pattern over direct Firestore calls inside ViewModels — the backend could be swapped (Supabase, a mock source, anything) without touching a single screen. Same instinct as choosing SHAP over a black-box model: optimize for what you can defend, not just what happens to work once.
 
-[![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/PrepAI)
+[![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/prep-ai)
 
 ---
 
