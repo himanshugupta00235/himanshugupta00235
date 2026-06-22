@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1600&color=58A6FF&center=true&vCenter=true&width=700&lines=Himanshu+Gupta+%E2%80%94+AI%2FML+Engineer+%26+Flutter+Developer;2+Published+Papers+%C2%B7+94.3%25+CV+Accuracy+%C2%B7+Production+Flutter+Apps;From+First+Principles+to+Production+AI+%26+Apps)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1600&color=58A6FF&center=true&vCenter=true&width=950&lines=Himanshu+Gupta+%E2%80%94+AI%2FML+Engineer+%26+Flutter+Developer;2+Published+Papers+%C2%B7+94.3%25+CV+Accuracy+%C2%B7+Production+Flutter+Apps;From+First+Principles+to+Production+AI+%26+Apps)](https://git.io/typing-svg)
 
 <br>
 
