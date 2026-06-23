@@ -58,15 +58,16 @@ Most recently, took that same discipline into mobile: shipped **PrepAI**, a Flut
 
 ## Currently Building
 
-> **Document Intelligence Pipeline** · `Active Build`
+> **KhetSaathi** · `Active Build`
 
-A production-minded RAG system for cross-document question answering over domain-specific corpora.
+An offline-first Flutter + Firebase app that turns my published crop-prediction research into something an actual farmer with patchy or no internet can use in the field.
 
 **Architecture under construction:**
-- FastAPI async backend → LangChain retrieval chain → ChromaDB vector store → streaming response with source attribution
-- Comparing chunking strategies: fixed-size vs recursive text splitting vs semantic chunking — measuring precision and recall at each approach
-- Implementing BM25 + dense retrieval hybrid with Maximum Marginal Relevance (MMR) reranking for result diversity
-- Target: sub-500ms query latency with grounded, citation-level answers
+- Flutter (offline-first) → local Hive cache → background sync queue → Cloud Firestore → Cloud Function → LightGBM crop-advisory model endpoint
+- Comparing offline conflict-resolution strategies for farm-log entries: last-write-wins vs merge-on-sync vs manual conflict flagging, since rural connectivity drops mid-write often
+- On-device crop/leaf photo capture with client-side compression before upload, to keep data usage low on 2G
+- FCM push notifications for advisory alerts (pest risk, irrigation timing) triggered from Cloud Functions once the model scores new data
+- Target: fully usable offline for data entry, auto-syncs within a short window once connectivity returns, advisory shown in the farmer's regional language
 
 [Repository (in progress) →](https://github.com/himanshugupta00235)
 
