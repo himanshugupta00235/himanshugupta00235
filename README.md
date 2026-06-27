@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1600&color=58A6FF&center=true&vCenter=true&width=950&lines=Himanshu+Gupta+%E2%80%94+AI%2FML+Engineer+%26+Flutter+Developer;2+Published+Papers+%C2%B7+94.3%25+CV+Accuracy+%C2%B7+Production+Flutter+Apps;From+First+Principles+to+Production+AI+%26+Apps)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1600&color=58A6FF&center=true&vCenter=true&width=700&lines=Himanshu+Gupta+%E2%80%94+AI+%26+ML+Engineer;2+Published+Papers+%C2%B7+94.3%25+CV+Accuracy+%C2%B7+AIR+57+NMTSE;From+First+Principles+to+Production+AI)](https://git.io/typing-svg)
 
 <br>
 
@@ -19,7 +19,7 @@ B.Tech Computer Science · AI/ML Specialization · Bennett University · **Gradu
 
 <div align="center">
 
-| 📄 2 Published Papers | 💻 350+ DSA Problems | 🎯 94.3% CV Accuracy | 📱 Flutter + Firebase Shipped | 🏆 AIR 57 · NMTSE | 🎓 CGPA 8.15 / 10 |
+| 📄 2 Published Papers | 💻 350+ DSA Problems | 🎯 94.3% CV Accuracy | 🏆 AIR 57 · NMTSE | 📦 6 Projects Shipped | 🎓 CGPA 8.15 / 10 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
 </div>
@@ -30,44 +30,25 @@ B.Tech Computer Science · AI/ML Specialization · Bennett University · **Gradu
 
 Three years. Built from first principles. Published peer-reviewed research on explainable AI and sustainability before my final year. Shipped a computer vision safety system that runs on a Raspberry Pi at 15 FPS. Wrote gradient descent from scratch before ever calling `model.fit()`.
 
-Most recently, took that same discipline into mobile: shipped **PrepAI**, a Flutter interview-prep app built on Firebase, MVVM, and the Repository Pattern — because a well-validated model means nothing if it never reaches a product someone actually opens. Now learning to build with LLMs, RAG pipelines, and agentic systems too — with the same rigor I brought to every layer before this one.
+Now learning to build with LLMs, RAG pipelines, and agentic systems — with the same discipline I brought to every layer before this one.
 
-**I implement before I import. I publish before I claim. I design for the product someone opens, not just the metric on a slide.**
-
----
-
-## Featured Build
-
-### PrepAI — Flutter Interview-Prep App
-`Mobile Development` `Firebase` `Clean Architecture`
-
-**The problem:** Interview-prep tools are either flat, unfiltered question dumps or web-only experiences — neither fits into the small, frequent gaps of a real day where most prep actually happens.
-
-**The approach:** Built mobile-first in Flutter on **MVVM** with a **Repository Pattern** and a dedicated **Service Layer**, so Firebase never touches the UI directly — ViewModels talk only to repository interfaces, never to Firestore. Firebase Authentication and Cloud Firestore sync a categorized, difficulty-filtered question bank, bookmarks, dashboard analytics, and progress tracking in real time, with AI-generated answer suggestions layered in as the direct bridge between the ML work below and a product someone opens daily.
-
-**Stack:** `Flutter` `Dart` `Firebase Auth` `Cloud Firestore` `Provider` `MVVM` `Repository Pattern` `Material Design`
-
-**Results:** Full authentication + real-time data sync across categories, difficulty levels, bookmarks, and progress · Clean separation across Views, ViewModels, Repositories, and Services · Built using Cursor and GitHub Copilot without sacrificing architectural discipline
-
-**Decision that mattered:** Repository Pattern over direct Firestore calls inside ViewModels — the backend could be swapped (Supabase, a mock source, anything) without touching a single screen. Same instinct as choosing SHAP over a black-box model: optimize for what you can defend, not just what happens to work once.
-
-[![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/prep-ai)
-[![Live Demo →](https://img.shields.io/badge/Live%20Demo-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://prepai-5819e.web.app/#/home)
+**I implement before I import. I publish before I claim. I optimize for real constraints, not benchmark scores.**
 
 ---
 
 ## Currently Building
 
-> **KhetSaathi** · `Active Build`
+> **Document Intelligence Pipeline** · `Active Build · 2025`
 
-An offline-first Flutter + Firebase app that turns my published crop-prediction research into something an actual farmer with patchy or no internet can use in the field.
+A production-minded RAG system for cross-document question answering over domain-specific corpora.
 
 **Architecture under construction:**
-- Flutter (offline-first) → local Hive cache → background sync queue → Cloud Firestore → Cloud Function → LightGBM crop-advisory model endpoint
-- Comparing offline conflict-resolution strategies for farm-log entries: last-write-wins vs merge-on-sync vs manual conflict flagging, since rural connectivity drops mid-write often
-- On-device crop/leaf photo capture with client-side compression before upload, to keep data usage low on 2G
-- FCM push notifications for advisory alerts (pest risk, irrigation timing) triggered from Cloud Functions once the model scores new data
-- Target: fully usable offline for data entry, auto-syncs within a short window once connectivity returns, advisory shown in the farmer's regional language
+- FastAPI async backend → LangChain retrieval chain → ChromaDB vector store → streaming response with source attribution
+- Comparing chunking strategies: fixed-size vs recursive text splitting vs semantic chunking — measuring precision and recall at each approach
+- Implementing BM25 + dense retrieval hybrid with Maximum Marginal Relevance (MMR) reranking for result diversity
+- Target: sub-500ms query latency with grounded, citation-level answers
+
+**Technical questions I'm working through:** Whether retrieval quality or generation quality is the dominant bottleneck in domain-specific RAG; how chunk overlap affects precision vs recall at different context window sizes; when hybrid retrieval actually outperforms dense-only.
 
 [Repository (in progress) →](https://github.com/himanshugupta00235)
 
@@ -84,9 +65,9 @@ Two peer-reviewed papers before graduation. Both focused on real-world deploymen
 **Enhancing Crop Prediction with Explainable AI: SHAP-Based Approach**
 *Peer-Reviewed · Published · 2026*
 
-The problem with ML in agriculture isn't accuracy — it's that farmers won't act on a black-box prediction. Built a LightGBM pipeline (**98.64% accuracy** on SF24 dataset, 4,800 records, 28 features with SMOTE balancing), then applied SHAP for both global feature importance and per-prediction explanations. The goal wasn't just performance: it was a model a non-technical domain expert could interrogate, challenge, and trust.
+The problem with ML in agriculture isn't accuracy — it's that farmers won't act on a black-box prediction. Built a LightGBM pipeline (**98.64% accuracy** on SF24 dataset, 4,800 records, 28 features with SMOTE balancing), then applied SHAP for both global feature importance and per-prediction explanations. The goal wasn't just performance: it was a model a non-technical domain expert could interrogate, challenge, and trust. Accuracy and interpretability, not accuracy or interpretability.
 
-[Read Paper →](https://ieeexplore.ieee.org/abstract/document/11398280) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Enhancing-Crop-Prediction-with-Explainable-AI-ASHAP-Based-Approach-)
+[Read Paper →](https://ieeexplore.ieee.org/abstract/document/11398280)) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Enhancing-Crop-Prediction-with-Explainable-AI-ASHAP-Based-Approach-)
 
 </td>
 </tr>
@@ -96,9 +77,9 @@ The problem with ML in agriculture isn't accuracy — it's that farmers won't ac
 **Revolutionizing Waste Management: An AI-driven Approach Towards Sustainability**
 *Peer-Reviewed · Published · 2025*
 
-Smart city infrastructure needs waste classification at camera speed. Applied Random Forest and Decision Tree ensemble classifiers on a 22,500+ image Kaggle dataset, using PCA and LASSO for dimensionality reduction before training, validated via K-Fold cross-validation for generalization robustness.
+Smart city infrastructure needs waste classification at camera speed. Applied Random Forest and Decision Tree ensemble classifiers on a 22,500+ image Kaggle dataset, using PCA and LASSO for dimensionality reduction before training — a deliberate choice to reduce variance before ensembling, not after. Validated via K-Fold cross-validation for generalization robustness. Built for operational scalability, not lab conditions.
 
-[Read Paper →](https://www.taylorfrancis.com/chapters/edit/10.1201/9781003593089-140/revolutionizing-waste-management-ai-driven-approach-towards-sustainability-sankalp-bijalwan-aniket-saroj-himanshu-gupta-shashwat-sharma-saurabh-kumar-srivastava-ambrish-kumar) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Revolutionizing-Waste-Management-An-AI-driven-Approach-Towards-Sustainability-)
+[Read Paper →](https://www.taylorfrancis.com/chapters/edit/10.1201/9781003593089-140/revolutionizing-waste-management-ai-driven-approach-towards-sustainability-sankalp-bijalwan-aniket-saroj-himanshu-gupta-shashwat-sharma-saurabh-kumar-srivastava-ambrish-kumar)) &nbsp;·&nbsp; [Repository →](https://github.com/himanshugupta00235/Revolutionizing-Waste-Management-An-AI-driven-Approach-Towards-Sustainability-)
 
 </td>
 </tr>
@@ -112,6 +93,8 @@ Smart city infrastructure needs waste classification at camera speed. Applied Ra
 2022  ─── CS Foundations
       │   └── C++, Python · OOP · OS · Computer Networks · DBMS · SDLC
       │   └── 300+ DSA problems — LeetCode · TUF · GeeksforGeeks
+      │   └── Cert: C++ Deep Dive (Udemy, Abdul Bari)
+      │   └── Cert: Algorithmic Toolbox (Coursera, UC San Diego)
       │   └── Built: ChatNest (C++ CLI chat app with auth + messaging)
       │   └── Built: Huffman File Compressor (60% size reduction, files up to 10MB)
       │
@@ -119,30 +102,27 @@ Smart city infrastructure needs waste classification at camera speed. Applied Ra
       │   └── Scikit-Learn · NumPy · Pandas · Matplotlib
       │   └── Batch gradient descent from scratch → R² > 98% on 10,000-record dataset
       │   └── TF-IDF + Logistic Regression spam classifier → 92.8%+ on 5,600 emails, Streamlit-deployed
-      │   └── Published: Crop Prediction with XAI (98.64% · SHAP) (2026)
-      │   └── Published: Waste Management AI (22,500+ images · K-Fold validated) (2025)
+      │   └── Cert: Supervised ML Classification (IBM, Coursera)
+      │   └── Published: Crop Prediction with XAI (98.64% · SHAP)(Published in 2026)
+      │   └── Published: Waste Management AI (22,500+ images · K-Fold validated) (Published in 2025)
       │
 2024  ─── Deep Learning · Computer Vision · Accessibility AI
       │   └── TensorFlow · Keras · OpenCV · Dlib
       │   └── Driver Drowsiness Detection — 94.3% accuracy, 15 FPS, Raspberry Pi deployable
       │   └── Multi-indicator fusion (EAR + MAR + Head Pose) → 5.7% false positive rate
       │   └── Sign Language Converter — Audio/Text ↔ Indian Sign Language (web app)
+      │   └── Flask + Streamlit deployment experience
       │
-2025  ─── Generative AI & Agentic Systems
-      │   └── FastAPI · LangChain · ChromaDB · FAISS
-      │   └── RAG Architecture · Hybrid Retrieval · Embedding Models
-      │   └── Building: Document Intelligence Pipeline
-      │
-2026  ─── Mobile Development & Production Architecture  ◄─── Active
-            └── Flutter · Dart · Firebase (Auth, Firestore) · Provider
-            └── MVVM · Repository Pattern · Service Layer architecture
-            └── Built: PrepAI — Flutter interview-prep app, developed with Cursor + GitHub Copilot
-            └── Applying research-grade rigor to mobile product architecture
+2025  ─── Generative AI & Agentic Systems  ◄─── Active
+            └── FastAPI · LangChain · ChromaDB · FAISS
+            └── RAG Architecture · Hybrid Retrieval · Embedding Models
+            └── LangGraph · AI Agents (next)
+            └── Building: Document Intelligence Pipeline
 ```
 
 ---
 
-## Other Projects
+## Featured Projects
 
 <table>
 <tr>
@@ -153,11 +133,13 @@ Smart city infrastructure needs waste classification at camera speed. Applied Ra
 
 **The problem:** Single-metric systems (PERCLOS alone) generate false positives that drivers begin ignoring — eliminating the safety benefit entirely.
 
-**The approach:** Multi-indicator AND logic: Eye Aspect Ratio (EAR) + Mouth Aspect Ratio (MAR) + Head Pose Estimation via Dlib's 68-point facial landmark model.
+**The approach:** Multi-indicator AND logic: Eye Aspect Ratio (EAR) + Mouth Aspect Ratio (MAR) + Head Pose Estimation via Dlib's 68-point facial landmark model. Alert triggers only when multiple thresholds breach simultaneously, drastically cutting spurious alerts.
 
 **Stack:** `Python` `OpenCV` `Dlib` `NumPy` `Flask`
 
 **Results:** 94.3% detection accuracy · 5.7% false positive rate · 15 FPS real-time · Raspberry Pi deployable
+
+**Decision that mattered:** AND logic over OR logic for multi-signal fusion. OR catches everything but cries wolf constantly. AND preserves trust in the alert system.
 
 [![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/Real-Time-Driver-Drowsiness-Detection-System-By-Himanshu)
 
@@ -167,39 +149,73 @@ Smart city infrastructure needs waste classification at camera speed. Applied Ra
 ### Crop Prediction with Explainable AI *(Published)*
 `XAI` `LightGBM` `SHAP` `Agricultural ML`
 
-**The problem:** Accurate crop prediction models fail in the field because domain experts — farmers — won't act on predictions they can't interrogate.
+**The problem:** Accurate crop prediction models fail in the field because domain experts — farmers — won't act on predictions they can't interrogate or challenge.
 
-**The approach:** LightGBM classification on SMOTE-balanced SF24 dataset → SHAP post-hoc explainability for global and per-prediction attribution.
+**The approach:** LightGBM classification on SMOTE-balanced SF24 dataset (4,800 records, 28 features) → SHAP post-hoc explainability for both global feature importance and per-prediction attribution. Each prediction ships with a reason a non-technical user can evaluate.
 
 **Stack:** `Python` `LightGBM` `SHAP` `SMOTE` `Scikit-Learn`
 
 **Results:** 98.64% accuracy · Peer-reviewed and published · Actionable explanations for non-ML users
 
+**Decision that mattered:** SHAP post-hoc over an inherently interpretable model preserved accuracy while adding trust. The explainability-accuracy tradeoff was a choice, not a constraint.
+
 [![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/Enhancing-Crop-Prediction-with-Explainable-AI-ASHAP-Based-Approach-)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Gradient Descent from Scratch
+`ML Fundamentals` `Optimization` `NumPy`
+
+**The problem:** Most engineers know how to call `model.fit()`. Fewer understand what happens at each iteration — which means they can't debug it when it fails.
+
+**The approach:** Full pipeline without sklearn optimization: feature normalization → custom batch gradient descent (10,000 iterations, manually tracked) → loss curve visualization → residual analysis for model validation.
+
+**Stack:** `Python` `NumPy` `Matplotlib` `Pandas`
+
+**Results:** R² > 98% on 10,000-record dataset · Internalized understanding of optimization mechanics
+
+**Decision that mattered:** Implementing feature normalization manually revealed why gradient descent diverges when features are on different scales — a step sklearn silently handles but that breaks without it.
+
+[![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/Predictive-Regression-Modeling-with-Gradient-Descent-)
+
+</td>
+<td width="50%" valign="top">
+
+### Sign Language Converter (Audio/Text ↔ ISL)
+`Accessibility AI` `Computer Vision` `NLP`
+
+**The problem:** Communication tools for deaf and hard-of-hearing communities are severely under-resourced in Indian Sign Language compared to ASL or English-language systems.
+
+**The approach:** Web application converting audio and text input to ISL gesture sequences with bidirectional support — both hearing-to-signing and signing-to-text pathways.
+
+**Stack:** `Python` `Computer Vision` `NLP` `Web App`
+
+**Results:** Functional bidirectional ISL converter · Addresses a high-impact accessibility gap where prior art in Indian language sign systems is minimal
+
+**Why this project:** AI's highest-leverage use cases are often in domains where the market is small but the need is acute and systematically underserved.
+
+[![Code →](https://img.shields.io/badge/View%20Code-%23181717?style=flat-square&logo=github&logoColor=white)](https://github.com/himanshugupta00235/Real-time-audio-text-to-Indian-sign-language-and-vice-versa-converter)
 
 </td>
 </tr>
 </table>
 
 <details>
-<summary><b>+ 4 more projects (Gradient Descent · Sign Language Converter · ChatNest · Spam Classifier)</b></summary>
+<summary><b>+ 2 more projects (ChatNest · Spam Classifier)</b></summary>
 
 <br>
 
-**Gradient Descent from Scratch** · `Python` `NumPy` `Matplotlib`
-Full pipeline without sklearn optimization: manual feature normalization → custom batch gradient descent → loss curve visualization. R² > 98% on a 10,000-record dataset.
-→ [Repository](https://github.com/himanshugupta00235/Predictive-Regression-Modeling-with-Gradient-Descent-)
-
-**Sign Language Converter (Audio/Text ↔ ISL)** · `Computer Vision` `NLP`
-Web application converting audio and text input to Indian Sign Language gesture sequences with bidirectional support.
-→ [Repository](https://github.com/himanshugupta00235/Real-time-audio-text-to-Indian-sign-language-and-vice-versa-converter)
-
 **ChatNest — C++ CLI Chat Application** · `C++` `STL` `Data Structures`
-Real-time command-line chat system built entirely in C++ with STL containers — no external networking libraries.
+Real-time command-line chat system built entirely in C++ with STL containers. User registration, authentication, friend management, and messaging without external networking libraries. Forced every architectural decision into the open.
 → [Repository](https://github.com/himanshugupta00235/Chatting-Based-Application-using-Cpp-Data-Structure)
 
+<br>
+
 **Spam Message / Email Classifier** · `NLP` `Scikit-Learn` `Streamlit`
-TF-IDF → StandardScaler → Logistic Regression → Streamlit web app. 92.8%+ accuracy on 5,600 emails.
+TF-IDF → StandardScaler → Logistic Regression → Streamlit web app with pickle-based model serving. 92.8%+ accuracy on 5,600 emails. A clean, production-ready sklearn pipeline from preprocessing to live inference.
 → [Repository](https://github.com/himanshugupta00235/Spam-Message-Email-Identifier-By-Himanshu)
 
 </details>
@@ -210,16 +226,13 @@ TF-IDF → StandardScaler → Logistic Regression → Streamlit web app. 92.8%+ 
 
 <table>
 <tr>
-<th align="center">Foundation · Shipped in Production</th>
+<th align="center">Foundation · Used in Projects</th>
 <th align="center">Active · Current Builds</th>
 <th align="center">Next · Mastering Now</th>
 </tr>
 <tr>
 <td align="center">
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
@@ -227,6 +240,9 @@ TF-IDF → StandardScaler → Logistic Regression → Streamlit web app. 92.8%+ 
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 </td>
@@ -236,14 +252,16 @@ TF-IDF → StandardScaler → Logistic Regression → Streamlit web app. 92.8%+ 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
 </td>
 <td align="center">
 
-![Riverpod](https://img.shields.io/badge/Riverpod-58A6FF?style=flat-square&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-58A6FF?style=flat-square&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-00D4FF?style=flat-square&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-00C4B4?style=flat-square&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-FF4B4B?style=flat-square&logoColor=white)
 
 </td>
 </tr>
@@ -253,31 +271,45 @@ TF-IDF → StandardScaler → Logistic Regression → Streamlit web app. 92.8%+ 
 
 ## What Makes Me Different
 
+Three things that distinguish how I work — not just what I've learned:
+
 **1. I implement before I import.**
-Wrote batch gradient descent from scratch before using sklearn optimizers. This is how I ensure I understand exactly what I'm asking a library to do, so I can reason about it when it fails.
+Wrote batch gradient descent from scratch before using sklearn optimizers. Built Huffman compression from scratch before ever importing zlib. This isn't academic masochism — it's how I ensure I understand exactly what I'm asking a library to do, so I can reason about it when it fails or behaves unexpectedly.
 
 **2. I publish, not just prototype.**
-Two peer-reviewed papers before my final year. Research discipline changes how you engineer: define your evaluation methodology before running experiments, not after seeing results you like.
+Two peer-reviewed papers before my final year. Research discipline changes how you engineer: define your evaluation methodology before running experiments, not after seeing results you like. That habit carries directly into how I build and validate ML systems.
 
 **3. I design for the constraints that actually matter.**
-94.3% accuracy on a server is meaningless if it runs at 2 FPS on the hardware your user has. Built the drowsiness detector specifically to run on Raspberry Pi at 15 FPS. Used SHAP specifically because farmers — not data scientists — are the end users.
-
-**4. I build the model and the product around it.**
-A SHAP explanation or a 94.3%-accurate detector is only as useful as the surface it ships in. Built PrepAI specifically to prove the same rigor extends past the notebook — into Firebase-backed, MVVM-architected, production mobile code.
+94.3% accuracy on a server is meaningless if it runs at 2 FPS on the hardware your user has. Built the drowsiness detector specifically to run on Raspberry Pi at 15 FPS. Used SHAP specifically because farmers — not data scientists — are the end users. Real-world constraints are design inputs, not obstacles to work around.
 
 ---
 
-## Engineer Roadmap
+## AI Engineer Roadmap
 
 | Stage | Status | Proof |
 |---|:---:|---|
-| CS Foundations + DSA | ✅ | 350+ problems · AIR 57 NMTSE |
+| CS Foundations + DSA | ✅ | 300+ problems · C++ & algorithms certifications · AIR 57 NMTSE |
 | Classical Machine Learning | ✅ | 3 ML projects · custom gradient descent · sklearn pipelines in production |
 | Deep Learning + Computer Vision | ✅ | Drowsiness detection at 94.3% · Sign language converter · TF + OpenCV |
 | Applied Research | ✅ | 2 peer-reviewed papers published · SHAP / XAI · ensemble methods |
-| **Mobile / Production App Development** | ✅ | **PrepAI — Flutter, Firebase, MVVM, Repository Pattern** |
 | Generative AI / RAG Systems | 🔄 | Document Intelligence Pipeline in progress · LangChain + ChromaDB |
 | Agentic AI Engineering | ⏳ | LangGraph · multi-agent coordination · tool use · memory systems |
+| Production AI Systems | 🎯 | MLOps · inference optimization · monitoring · scalable pipelines |
+
+---
+
+## Learning in Public
+
+I don't just list technologies I'm exploring. Here's exactly what I'm doing and where I am:
+
+| Topic | Current Activity | Depth |
+|---|---|---|
+| RAG Architecture | Building doc Q&A pipeline; benchmarking fixed vs semantic chunking | Implementing — past tutorial stage |
+| LangChain / LCEL | Working through LangChain Expression Language + building custom chains | Active — first retrieval chains working |
+| FastAPI | Building async ML inference endpoints with Pydantic validation | First endpoints deployed locally |
+| Foundational Papers | Reading originals, not blog summaries: *Attention Is All You Need* · *RAG paper (Lewis et al.)* · *Constitutional AI* | Ongoing — taking structured notes |
+| ML Theory | Re-derive key results before trusting library implementations | Done: gradient descent, backprop, attention weights |
+| Problem Solving | Consistent practice — 300+ over 3 years, not pre-interview sprints | Ongoing |
 
 ---
 
@@ -302,19 +334,17 @@ A SHAP explanation or a 94.3%-accurate detector is only as useful as the surface
 
 <div align="center">
 
-Graduating **July 2026** · Actively seeking roles in:
+Graduating **July 2026** · Actively seeking full-time roles in:
 
-**Flutter / Mobile App Development &nbsp;·&nbsp; ML Engineering &nbsp;·&nbsp; AI Engineering &nbsp;·&nbsp; Generative AI Engineering**
+**ML Engineering &nbsp;·&nbsp; AI Engineering &nbsp;·&nbsp; Generative AI Engineering &nbsp;·&nbsp; Research Engineering**
 
-Also open to: pre-placement offers, mobile development internships, research internships (2025–2026), and AI product collaborations.
+Also open to: pre-placement offers, research internships (2025–2026), and AI product collaborations.
 
 <br>
 
 [![Email](https://img.shields.io/badge/himanshugupta00235%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:himanshugupta00235@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/himanshu-gupta-383a6b220/)
 [![Resume](https://img.shields.io/badge/Download%20Resume-181717?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://drive.google.com/file/d/1RAXEdIfAIvesxwoDafYlOe6vK4p-me_7/view?usp=sharing)
-
-<!-- ⚠️ Update the Resume badge link above once you upload the new Flutter-focused resume version -->
 
 <br>
 
@@ -327,3 +357,4 @@ Also open to: pre-placement offers, mobile development internships, research int
 <div align="center">
 <sub>Every claim on this profile has a repository or published paper behind it.</sub>
 </div>
+![Uploading image.png…]()
